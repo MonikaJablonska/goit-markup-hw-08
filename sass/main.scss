@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+  /* margin auto - center container horizontally */
+}
+
+.link {
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover,
+.link:focus,
+.link-active {
+  color: var(--accent);
+}
+
+.link-active {
+  position: relative;
+}
+
+.link-active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-top: 28px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent);
+}
+
+/* btn = button */
+.btn {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  background-color: var(--light-background-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow, background-color, color;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--light-color);
+  background-color: var(--accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+@import 'utils/variables';
+@import 'components/header';
+@import 'components/logo';
+@import 'components/hero';
+@import 'components/our-strengths';
+@import 'components/what-we-do';
+@import 'components/our-team';
+@import 'components/our-clients';
+@import 'components/footer';
+@import 'components/our-projects';
+@import 'components/modal-window';
+@import 'components/newsletter-form';
+@import 'components/social-media-item';
+@import 'components/order-form';
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  /* padding: 0; - probably to remove*/
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}

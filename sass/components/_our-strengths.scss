@@ -1,0 +1,40 @@
+.our-strengths {
+  &__container {
+    margin-bottom: 94px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__heading {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+
+  &__icon-container {
+    margin-bottom: 30px;
+    padding: 25px 0;
+    border-radius: 4px;
+    background-color: var(--light-background-color);
+  }
+
+  &__item:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+  }
+
+  &__text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}

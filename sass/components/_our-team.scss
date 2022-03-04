@@ -1,0 +1,56 @@
+.our-team {
+  background-color: var(--light-background-color);
+
+  &__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__heading {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.team-card {
+  padding-bottom: 30px;
+  width: 270px;
+  font-size: 16px;
+  text-align: center;
+  background-color: var(--light-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+
+  &__heading {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.188;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+
+  &__content {
+    line-height: 1.188;
+    letter-spacing: 0.03em;
+  }
+
+  &__social-media-list {
+    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,46 @@
+.our-clients {
+  &__heading {
+    margin-top: 82px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--secondary-text-color);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: block;
+    padding: 16px 32px;
+    border: 1px solid var(--our-clients-color);
+    border-radius: 4%;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  &__link:hover > &__icon,
+  &__link:focus > &__icon {
+    fill: var(--accent);
+  }
+
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--social-media-icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

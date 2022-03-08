@@ -1,4 +1,6 @@
 .what-we-do {
+  display: none;
+
   &__container {
     margin-bottom: 94px;
   }
@@ -34,5 +36,11 @@
     font-weight: 700;
     color: var(--light-color);
     background-color: rgba(47, 48, 58, 0.8);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .what-we-do {
+    display: block;
   }
 }

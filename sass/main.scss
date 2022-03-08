@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   padding: 0 15px;
   margin: auto;
   /* margin auto - center container horizontally */
@@ -63,21 +63,20 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-
-@import 'utils/variables';
-@import 'components/header';
-@import 'components/logo';
-@import 'components/hero';
-@import 'components/our-strengths';
-@import 'components/what-we-do';
-@import 'components/our-team';
-@import 'components/our-clients';
-@import 'components/footer';
-@import 'components/our-projects';
-@import 'components/modal-window';
-@import 'components/newsletter-form';
-@import 'components/social-media-item';
-@import 'components/order-form';
+@import "utils/variables";
+@import "components/header";
+@import "components/logo";
+@import "components/hero";
+@import "components/our-strengths";
+@import "components/what-we-do";
+@import "components/our-team";
+@import "components/our-clients";
+@import "components/footer";
+@import "components/our-projects";
+@import "components/modal-window";
+@import "components/newsletter-form";
+@import "components/social-media-item";
+@import "components/order-form";
 
 body {
   font-family: "Roboto", sans-serif;
@@ -106,4 +105,16 @@ p {
 
 img {
   display: block;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    width: 1200px;
+  }
 }

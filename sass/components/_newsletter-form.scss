@@ -1,11 +1,12 @@
 .newsletter-form {
-  display: flex;
   margin-top: 20px;
+  text-align: center;
 
   &__input {
     outline: none;
+    margin-bottom: 20px;
     padding: 15px 16px;
-    width: 358px;
+    width: 100%;
     border: 1px solid #ffffff4d;
     border-radius: 4px;
     background-color: transparent;
@@ -37,5 +38,21 @@
     width: 24px;
     height: 24px;
     fill: var(--light-color);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .newsletter-form {
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .newsletter-form {
+    display: flex;
+
+    &__input {
+      margin-bottom: 0;
+      width: 358px;
+    }
   }
 }

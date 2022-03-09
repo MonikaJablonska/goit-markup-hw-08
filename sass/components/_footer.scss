@@ -1,23 +1,24 @@
 .footer {
-  margin-top: 94px;
+  margin-top: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
   color: var(--light-color);
   background-color: var(--dark-background-color);
 
-  &__container {
-    display: flex;
+  &__contact {
+    text-align: center;
   }
 
   &__join-us {
-    margin-top: 12px;
-    margin-left: 70px;
+    margin-top: 60px;
+    text-align: center;
   }
 
   &__heading {
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__list-item:not(:last-of-type) {
@@ -26,12 +27,17 @@
 
   &__list-social-media {
     display: flex;
+    justify-content: center;
     margin-top: 20px;
   }
 
   &__logo {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.667;
     color: var(--light-color);
   }
 
@@ -48,8 +54,58 @@
   }
 
   &__newsletter {
-    margin-top: 12px;
-    margin-left: 78px;
+    margin-top: 60px;
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    &__join-us {
+      margin-top: 12px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer {
+    margin-top: 94px;
+
+    &__container {
+      display: flex;
+    }
+
+    &__join-us {
+      margin-top: 12px;
+      margin-left: 70px;
+      text-align: left;
+    }
+
+    &__list-social-media {
+      justify-content: normal;
+    }
+
+    &__logo {
+      font-size: 26px;
+      line-height: 1.192;
+    }
+
+    &__newsletter {
+      margin-top: 12px;
+      margin-left: 78px;
+    }
+
+    &__heading {
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      text-align: left;
+    }
+  }
+}

@@ -81,6 +81,11 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .our-projects {
+    &__list-btn {
+      padding-right: 0;
+      justify-content: center;
+    }
+
     &__photo {
       width: 354px;
     }
@@ -97,6 +102,7 @@
     &__list-btn {
       display: flex;
       margin-bottom: 50px;
+      padding-right: 0;
       justify-content: center;
     }
 

@@ -60,6 +60,7 @@
 
   &__btn {
     margin-top: 30px;
+    margin-bottom: 40px;
     padding: 10px 76px;
     align-self: center;
     color: var(--light-color);
@@ -76,6 +77,8 @@
 .user-policy {
   margin-top: 20px;
   align-self: center;
+  font-size: 12px;
+  line-height: 1.167;
 }
 
 .checkbox-input {
@@ -89,5 +92,12 @@
 
   &:checked {
     background: url("../images/icon_check.svg") no-repeat;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .user-policy {
+    font-size: 14px;
+    line-height: 1.714;
   }
 }

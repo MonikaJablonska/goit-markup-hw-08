@@ -13,9 +13,8 @@
 
 .modal-window {
   position: relative;
-  margin: auto;
-  width: 528px;
-  min-height: 581px;
+  margin: auto 15px;
+  min-height: 609px;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
@@ -42,10 +41,11 @@
   }
 
   &__heading {
-    margin-top: 40px;
+    margin: 40px 40px 0;
     padding-bottom: 2px;
     font-size: 20px;
     letter-spacing: 0.03em;
+    line-height: 1.5;
     text-align: center;
     color: var(--secondary-text-color);
   }
@@ -56,4 +56,23 @@
   opacity: 0;
   transform: scale(0);
   pointer-events: auto;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .modal-window {
+    margin: auto;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .modal-window {
+    margin: auto;
+    width: 528px;
+    min-height: 581px;
+  }
+
+  &__heading {
+    font-size: 20px;
+  }
 }

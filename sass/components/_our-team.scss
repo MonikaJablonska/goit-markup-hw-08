@@ -15,10 +15,7 @@
     text-align: center;
   }
 
-  &__team-card-list {
-  }
-
-  &__team-card-item {
+   &__team-card-item {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -57,11 +54,6 @@
     margin-right: 32px;
     margin-top: 16px;
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .our-team {
   }
 }
 

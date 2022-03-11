@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .our-team {
     &__team-card-list {
       display: flex;
@@ -73,7 +73,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .our-team {
     &__container {
       padding-top: 94px;

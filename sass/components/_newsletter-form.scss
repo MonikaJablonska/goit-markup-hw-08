@@ -41,6 +41,15 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .newsletter-form__input {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .newsletter-form {
     display: flex;

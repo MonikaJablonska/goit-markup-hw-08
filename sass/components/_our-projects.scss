@@ -13,15 +13,17 @@
     padding-right: 58px;
   }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 30px;
-    justify-content: space-between;
-  }
+  // &__list {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   row-gap: 30px;
+  //   justify-content: space-between;
+  // }
 
   &__item {
     margin: auto;
+    margin-bottom: 30px;
+    max-width: 450px;
     position: relative;
     overflow: hidden;
     border: 1px solid var(--border-projects-item-color);
@@ -29,8 +31,7 @@
   }
 
   &__photo {
-    width: 450px;
-    height: 294px;
+    width: 100%;
   }
 
   &__item:hover {
@@ -80,15 +81,23 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .our-projects {
     &__list-btn {
       padding-right: 0;
       justify-content: center;
     }
 
-    &__photo {
-      width: 354px;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    &__item {
+      margin: 0;
+      width: calc(50% - 50px);
     }
   }
 }
@@ -111,7 +120,7 @@
       margin-right: 8px;
     }
 
-    &__photo {
+    &__item {
       width: 370px;
     }
   }

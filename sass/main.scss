@@ -92,8 +92,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  /* padding: 0; - probably to remove*/
-}
+  }
 ul {
   margin: 0;
   padding: 0;
@@ -107,12 +106,6 @@ p {
 img {
   display: block;
 }
-
-// @media screen and (min-width: 768px) and (max-width: 1199px) {
-//   .container {
-//     width: 768px;
-//   }
-// }
 
 @media screen and (min-width: 1200px) {
   .container {

@@ -6,19 +6,15 @@
 
   &__list-btn {
     display: flex;
+    max-width: 450px;
+    margin: auto;
     flex-wrap: wrap;
+    justify-content: left;
     row-gap: 15px;
     column-gap: 8px;
     margin-bottom: 40px;
     padding-right: 58px;
   }
-
-  // &__list {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   row-gap: 30px;
-  //   justify-content: space-between;
-  // }
 
   &__item {
     margin: auto;
@@ -81,10 +77,11 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)  {
   .our-projects {
     &__list-btn {
       padding-right: 0;
+      max-width: 100%;
       justify-content: center;
     }
 

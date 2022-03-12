@@ -21,6 +21,7 @@
   }
 
   &__item {
+    margin: auto;
     position: relative;
     overflow: hidden;
     border: 1px solid var(--border-projects-item-color);
@@ -79,7 +80,7 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-projects {
     &__list-btn {
       padding-right: 0;
@@ -92,7 +93,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .our-projects {
     &__container {
       margin-top: 94px;

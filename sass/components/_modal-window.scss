@@ -58,19 +58,19 @@
   pointer-events: auto;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal-window {
     margin: auto;
     width: 450px;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .modal-window {
     margin: auto;
     width: 528px;
     min-height: 581px;
-    
+
     &__heading {
       font-size: 20px;
     }

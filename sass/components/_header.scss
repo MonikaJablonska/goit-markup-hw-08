@@ -64,7 +64,7 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .header {
     &__mobile-menu-btn {
       display: none;
@@ -94,7 +94,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .header {
     &__contact-list {
       display: flex;
